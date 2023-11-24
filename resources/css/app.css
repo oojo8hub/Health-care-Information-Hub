@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    #editor-content > h1 {
+        @apply text-2xl py-1 mt-6 mb-2 font-bold;
+    }
+
+    #editor-content > h2 {
+        @apply text-xl py-1 mt-6 mb-2 font-bold;
+    }
+
+    #editor-content > h3 {
+        @apply text-lg py-1 mt-6 mb-2 font-bold;
+    }
+
+    #editor-content > h4,
+    #editor-content > h5,
+    #editor-content > h6 {
+        @apply text-base mt-4 font-bold;
+    }
+
+
+    #editor-content ul {
+        @apply space-y-6 marker:text-slate-400 list-disc pl-5 space-y-2;
+    }
+
+    #editor-content li {
+        @apply tracking-wide
+    }
+
+    #editor-content a {
+        @apply font-semibold text-sky-700 hover:underline cursor-pointer;
+    }
+
+    #editor-content > h1 > a,
+    #editor-content > h2 > a {
+        @apply font-bold;
+    }
+
+}
